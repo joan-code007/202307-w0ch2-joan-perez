@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+.h1__body {
+  color: black;
+}
+.button_start {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  color: blue;
+  padding: auto;
+  width: 100px;
+  height: 50px;
+}
+.container {
+  border: 1px solid red;
+  padding: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
