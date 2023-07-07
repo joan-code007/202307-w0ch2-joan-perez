@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.h1__body {
+h1 {
   color: black;
 }
 .button__start {
@@ -16,7 +16,7 @@
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: larger;
 }
-.container {
+.start__container {
   padding: 250px;
   display: flex;
   flex-direction: column;
@@ -28,4 +28,51 @@
 }
 html {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+.second__page {
+  padding: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: aqua;
+  font-size: larger;
+}
+.card__1 {
+  display: flex;
+}
+.card__2 {
+  display: flex;
+}
+.button__smaller {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  color: blue;
+  padding: auto;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+}
+.button__greater {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  color: blue;
+  padding: auto;
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
+}
+.hidden {
+  display: none;
 }

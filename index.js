@@ -16,7 +16,6 @@ const generateCards = () => {
   return deckOfCards;
 };
 playDeck = generateCards();
-console.log(playDeck);
 
 const getrandomCard = (playdeck) => {
   const randomCard = playdeck[Math.floor(Math.random() * playdeck.length)];
@@ -24,13 +23,13 @@ const getrandomCard = (playdeck) => {
   return randomCard;
 };
 
-const clickStart = document.querySelector(".button__start");
-const reciveButtonStart = () => {
-  clickStart.addEventlistener =
-    ("click",
-    function () {
-      console.log("hola");
-    });
+const hiddeElements = () => {
+  firstPage.classList.add("hidden");
+  secondPage.classList.remove("hidden");
 };
 
-reciveButtonStart();
+const firstPage = document.querySelector(".start__container");
+const secondPage = document.querySelector(".second__page");
+const startButton = document.querySelector(".button__start");
+
+startButton.addEventListener("click", hiddeElements);
