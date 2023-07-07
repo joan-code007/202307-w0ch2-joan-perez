@@ -15,5 +15,22 @@ const generateCards = () => {
 
   return deckOfCards;
 };
-const playDeck = generateCards();
+playDeck = generateCards();
 console.log(playDeck);
+
+const getrandomCard = (playdeck) => {
+  const randomCard = playdeck[Math.floor(Math.random() * playdeck.length)];
+  console.log(`Tu carta es : ${randomCard}`);
+  return randomCard;
+};
+
+const clickStart = document.querySelector(".button__start");
+const reciveButtonStart = () => {
+  clickStart.addEventlistener =
+    ("click",
+    function () {
+      console.log("hola");
+    });
+};
+
+reciveButtonStart();
